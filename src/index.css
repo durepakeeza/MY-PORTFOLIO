@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0A0A0C;
+    --text-ivory: #F3F1ED;
+    --text-muted: #A8A8B0;
+    --border-silver: #D8D8E0;
+    --accent-lavender: #C9C7FF;
+  }
+
+  body {
+    background-color: #0A0A0C;
+    color: #F3F1ED;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(216, 216, 224, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 199, 255, 0.35);
+}
+
+/* Hairline dividers & luxury glass */
+.border-subtle {
+  border-color: rgba(216, 216, 224, 0.08);
+}
+
+.border-subtle-hover:hover {
+  border-color: rgba(201, 199, 255, 0.25);
+}
+
+.glass-luxury {
+  background: rgba(16, 16, 20, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
